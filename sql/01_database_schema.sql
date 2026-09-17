@@ -19,3 +19,11 @@ CREATE TABLE IF NOT EXISTS raw.account (
     frequency VARCHAR,
     date INTEGER
 );
+
+-- Raw customer-account relationship source table
+CREATE TABLE IF NOT EXISTS raw.disp (
+    disp_id INTEGER,
+    client_id INTEGER,
+    account_id INTEGER,
+    type VARCHAR
+);
