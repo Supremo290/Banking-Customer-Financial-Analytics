@@ -11,3 +11,11 @@ CREATE TABLE IF NOT EXISTS raw.client (
     birth_number INTEGER,
     district_id INTEGER
 );
+
+-- Raw account source table
+CREATE TABLE IF NOT EXISTS raw.account (
+    account_id INTEGER,
+    district_id INTEGER,
+    frequency VARCHAR,
+    date INTEGER
+);
